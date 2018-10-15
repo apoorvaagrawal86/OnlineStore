@@ -1,0 +1,9 @@
+package Application.UnitTests;
+
+public class JUnitMethodProvider_2 {
+	
+	MathProvider provider();
+	
+	public JUnitM
+
+}

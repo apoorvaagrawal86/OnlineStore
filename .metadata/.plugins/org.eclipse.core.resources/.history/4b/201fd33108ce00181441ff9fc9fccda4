@@ -1,0 +1,17 @@
+package Application.UnitTests;
+
+import Application.Application.MathProvider;
+
+public class JUnitMethodProvider_2 {
+	
+	MathProvider provider;
+	
+	public JUnitMethodProvider_2() 
+	{
+		provider = new MathProvider();
+	}
+	
+	
+	
+
+}

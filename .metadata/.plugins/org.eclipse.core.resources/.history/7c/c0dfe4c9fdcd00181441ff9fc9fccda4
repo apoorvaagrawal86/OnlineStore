@@ -1,0 +1,8 @@
+package Application.UnitTests;
+import static org.junit.Assert.*;
+import org.junit.Test;
+import Application.Application.MathProvider;
+
+public class JUnitMathProvider_1 {
+
+}
