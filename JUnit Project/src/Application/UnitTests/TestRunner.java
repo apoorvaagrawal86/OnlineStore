@@ -8,7 +8,7 @@ public class TestRunner {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Result result = JUnitCore.runClasses(JUnitMathProvider_1.class, JUnitMethodProvider_2.class);
+		Result result = JUnitCore.runClasses(JUnitMathProvider_1.class, JUnitMethodProvider_2.class, SeleniumJUnitTest.class);
 		System.out.println("Total Number of Tests " + result.getRunCount());
 		
 		System.out.println("Total Number of Failures " + result.getFailureCount());

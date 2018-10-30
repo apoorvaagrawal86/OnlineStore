@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="D:/Old Laptop Backup/HTML-CSS/HTML-CSS/HTML-CSS/Selenium Java/junit-4.10.jar/junit-4.10.jar"/>
 	<classpathentry kind="lib" path="D:/Old Laptop Backup/HTML-CSS/HTML-CSS/HTML-CSS/Selenium Java/hamcrest-core-1.3-sources.jar/hamcrest-core-1.3-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Old Laptop Backup/HTML-CSS/HTML-CSS/HTML-CSS/Selenium Java/selenium-java-3.14.0/client-combined-3.14.0.jar" sourcepath=""/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

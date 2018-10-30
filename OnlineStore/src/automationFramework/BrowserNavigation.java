@@ -3,27 +3,48 @@ package automationFramework;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.chrome.ChromeDriver;
+	import org.testng.annotations.Test;
+	import org.testng.annotations.AfterMethod;
+	import org.testng.annotations.BeforeMethod;
 	
 public class BrowserNavigation {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "D:\\Old Laptop Backup\\HTML-CSS\\HTML-CSS\\HTML-CSS\\Selenium Java\\chromedriver_win32\\chromedriver.exe");
+	
+		public static WebDriver driver;
 		String URL = "http://www.DemoQA.com";
+		
+		@BeforeMethod
+		public void beforeMethod() {
+			
+		System.setProperty("webdriver.chrome.driver", "D:\\Old Laptop Backup\\HTML-CSS\\HTML-CSS\\HTML-CSS\\Selenium Java\\chromedriver_win32\\chromedriver.exe");
+		
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get(URL);
-		WebElement Link = driver.findElement(By.xpath(".//*[@id='menu-item-374']/a"));
 		
+		driver.get(URL);
+		
+		}
+		
+		@Test
+		public void main() {
+		// TODO Auto-generated method stub
+		
+		WebElement Link = driver.findElement(By.xpath(".//*[@id='menu-item-374']/a"));
+			
 		Link.click();
 
 		driver.navigate().back();
-		
+			
 		driver.navigate().forward();
-		
-		driver.navigate().to(URL);
-		
+			
+		//driver.navigate().to(URL);
+			
 		driver.navigate().refresh();
+			}
+
+						
+		@AfterMethod
+		
+		public static void afterMethod(){
 		
 		driver.close();
 	}

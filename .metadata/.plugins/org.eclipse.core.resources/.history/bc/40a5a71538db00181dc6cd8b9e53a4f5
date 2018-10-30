@@ -1,0 +1,26 @@
+package automationFramework;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+
+public class TestNG {
+	
+	public WebDriver driver;
+	
+  @Test
+  public void main() {
+	  
+	  driver.findElement(By.id("account")).click();
+  }
+  @BeforeMethod
+  public void beforeMethod() {
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+  }
+
+}

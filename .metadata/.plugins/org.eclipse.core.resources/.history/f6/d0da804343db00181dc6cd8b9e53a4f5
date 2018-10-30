@@ -1,0 +1,6 @@
+&lt;suite name="Test Suite TestNG" &gt;
+&lt;test name="ToolsQA" &gt;
+&lt;classes&gt; &lt;class name="PackageName.TestCaseName" /&gt;
+&lt;/classes&gt;
+&lt;/test&gt;
+&lt;/suit&gt;

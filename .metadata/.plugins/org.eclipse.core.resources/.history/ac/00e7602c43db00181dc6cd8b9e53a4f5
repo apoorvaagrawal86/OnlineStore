@@ -1,0 +1,6 @@
+&lt;suite name="Any Name" &gt;
+&lt;test name="Any Name" &gt;
+&lt;classes&gt; &lt;class name="PackageName.TestCaseName" /&gt;
+&lt;/classes&gt;
+&lt;/test&gt;
+&lt;/suit&gt;

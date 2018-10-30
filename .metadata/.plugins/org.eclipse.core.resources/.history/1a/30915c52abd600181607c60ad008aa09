@@ -1,0 +1,19 @@
+package appModules;
+import org.openqa.selenium.WebDriver;
+import pageObjects.Home_Page;
+import pageObjects.Login_Page;
+import utility.ExcelUtils;
+
+
+public class SignIn_Actions {
+	
+	public static void Execute(Webdriver driver) throws Exception {
+		String sUserName = ExcelUtils.getCellData(1,1);
+		String sPassword = ExcelUtils.getCellData(1,2);
+		
+		Home_Page.lnk_MyAccount(driver).click();
+		LogIn_Page.txtbx_UserName(driver).sendKeys(sUserName);
+		LogIn_Page.txtbx_Password(driver).sendKeys(sPassword);
+		LogIn_Page.btn_LogIn(driver).click();
+	}
+}

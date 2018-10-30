@@ -1,0 +1,31 @@
+package automationFramework;
+import java.util.concurrent.TimeUnit;
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Log4j {
+	
+	private static WebDriver driver;
+	
+	private static Logger Log = Logger.getLogger(Log4j.class.getName());
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DOMConfigurator.configure("log4j.xml");
+		//create new instance of chrome driver
+		driver = new ChromeDriver();
+		
+		Log.info("New driver instantiated");
+		
+		//Put an implicit wait
+		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
+		Log.info("Implicit wait applied on the driver for 10 seconds");
+		
+		
+
+	}
+
+}
