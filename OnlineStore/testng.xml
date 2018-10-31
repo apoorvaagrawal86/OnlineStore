@@ -1,12 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Test Suite TestNG"> 
 <test name="ToolsQA">
+<parameter name="username" value="testuser_1"/>
+<parameter name="password" value="Test@123" />
 <classes>
-<class name="automationFramework.TestNG" />
-<class name="automationFramework.BrowserNavigation" />
-<class name="automationFramework.DropDownBoxList" />
-<class name="automationFramework.Log4j" />
-<class name="automationFramework.MouseHover" />
+<class name="automationFramework.TestNGParameters" />
 </classes>
 </test>
 </suite>
